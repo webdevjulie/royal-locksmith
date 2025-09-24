@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Locksmith | Licensed 24/7 Emergency Locksmith Services in Hackensack, NJ</title>
+    <link rel="icon" href="./images/royal-locksmith-logo.webp" type="image/webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-cream">
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Locksmith</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Zalando Sans -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Zalando Sans', sans-serif;
+}
+
+nav {
+    backdrop-filter: blur(12px);
+}
+
+.pulse-gold {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+</style>
+</head>
+<body class="relative">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="dark-gradient text-white shadow-2xl fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="./images/royal-locksmith-logo.webp" alt="Royal Locksmith Logo" class="w-40 h-auto object-contain">
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex space-x-8">
+                <li><a href="services.html" class="hover:text-gold transition-colors duration-300 font-medium">Services</a></li>
+                <li>
+                    <a href="service-areas.html" class="hover:text-gold transition-colors duration-300 font-medium flex items-center gap-1">
+                        <span class="material-icons text-base">place</span> Service Areas
+                    </a>
+                </li>
+                <li><a href="about-us" class="hover:text-gold transition-colors duration-300 font-medium">About</a></li>
+                <li><a href="reviews.html" class="hover:text-gold transition-colors duration-300 font-medium">Reviews</a></li>
+                <li><a href="contact.html" class="hover:text-gold transition-colors duration-300 font-medium">Contact</a></li>
+            </ul>
+
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex space-x-4">
+                <a href="tel:+15512928090" class="px-6 py-3 bg-gradient-to-r from-[#ea9e25] to-[#f5c471] text-white rounded-full hover:scale-105 transition-transform duration-300 flex items-center gap-2 font-semibold">
+                    <span class="material-icons">phone</span> Call (551) 292-8090
+                </a>
+                <a href="book-service.html" class="px-6 py-3 border-2 border-[#ea9e25] text-[#ea9e25] rounded-full hover:bg-gradient-to-r hover:from-[#ea9e25] hover:to-[#f5c471] hover:text-white transition-all duration-300 flex items-center gap-2 font-semibold">
+                    <span class="material-icons">calendar_month</span> Book Service
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button + Mobile Action Buttons -->
+            <div class="lg:hidden flex items-center gap-2">
+                <!-- Call Button -->
+                <a href="tel:+15512928090" class="px-3 py-2 bg-gradient-to-r from-[#ea9e25] to-[#f5c471] text-white rounded-full hover:scale-105 transition-transform duration-300 flex items-center gap-1 text-sm font-semibold">
+                    <span class="material-icons text-base">phone</span> Call
+                </a>
+
+                <!-- Book Button -->
+                <a href="book-service.html" class="px-3 py-2 border-2 border-[#ea9e25] text-[#ea9e25] rounded-full hover:bg-gradient-to-r hover:from-[#ea9e25] hover:to-[#f5c471] hover:text-white transition-all duration-300 flex items-center gap-1 text-sm font-semibold">
+                    <span class="material-icons text-base">calendar_month</span> Book
+                </a>
+
+                <!-- Hamburger Menu -->
+                <button id="menu-btn" class="text-gold text-3xl focus:outline-none">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 dark-gradient bg-opacity-95 z-40 transform -translate-x-full transition-transform duration-500 flex flex-col items-center justify-center space-y-8 lg:hidden">
+        <button id="close-menu" class="absolute top-6 right-6 text-gold text-4xl font-bold hover:rotate-180 transition-transform duration-300">
+            <span class="material-icons">close</span>
+        </button>
+
+        <a href="services.html" class="text-white text-3xl hover:text-gold transition-colors duration-300 font-bold">Services</a>
+        <a href="service-areas.html" class="text-white text-3xl hover:text-gold transition-colors duration-300 font-bold flex items-center gap-2">
+            <span class="material-icons">place</span> Areas
+        </a>
+        <a href="about.html" class="text-white text-3xl hover:text-gold transition-colors duration-300 font-bold">About</a>
+        <a href="reviews.html" class="text-white text-3xl hover:text-gold transition-colors duration-300 font-bold">Reviews</a>
+        <a href="contact.html" class="text-white text-3xl hover:text-gold transition-colors duration-300 font-bold">Contact</a>
+
+        <!-- Mobile Menu Buttons -->
+        <div class="flex flex-col space-y-4 mt-8">
+            <a href="tel:+15512928090" class="px-8 py-4 bg-gradient-to-r from-[#ea9e25] to-[#f5c471] text-white rounded-full text-xl font-bold flex items-center gap-2">
+                <span class="material-icons">phone</span> Emergency Call
+            </a>
+            <a href="book-service.html" class="px-8 py-4 border-2 border-[#ea9e25] text-[#ea9e25] rounded-full text-xl font-bold flex items-center gap-2 hover:bg-gradient-to-r hover:from-[#ea9e25] hover:to-[#f5c471] hover:text-white transition-all duration-300">
+                <span class="material-icons">calendar_month</span> Book Service
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="dark-gradient hero-pattern min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="animate-float absolute top-20 left-10 text-8xl text-gold">
+                <i class="fas fa-key"></i>
+            </div>
+            <div class="animate-float absolute bottom-32 right-20 text-6xl text-gold" style="animation-delay: -2s;">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="animate-float absolute top-1/2 left-1/4 text-4xl text-gold" style="animation-delay: -4s;">
+                <i class="fas fa-lock"></i>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white animate-fade-in-up">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6">
+                    Premium <span class="text-gold">Security</span>
+                    <br>Solutions
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
+                    24/7 Emergency Locksmith Services in Hackensack, NJ & Surrounding Areas. 
+                    Licensed, Insured & Trusted by Thousands.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="tel:+15512928090" class="px-8 py-4 gold-gradient text-white rounded-full text-xl font-bold hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3 pulse-gold">
+                        <i class="fas fa-phone"></i> Call Now: (551) 292-8090
+                    </a>
+                    <a href="#book" class="px-8 py-4 bg-transparent border-2 border-gold text-gold rounded-full text-xl font-bold hover:gold-gradient hover:text-white transition-all duration-300 flex items-center justify-center gap-3">
+                        <i class="fas fa-calendar"></i> Schedule Service
+                    </a>
+                </div>
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div class="glass-effect p-4 rounded-2xl">
+                        <div class="text-3xl font-bold text-gold">24/7</div>
+                        <div class="text-sm">Emergency Service</div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-2xl">
+                        <div class="text-3xl font-bold text-gold">Licensed</div>
+                        <div class="text-sm">& Insured</div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-2xl">
+                        <div class="text-3xl font-bold text-gold">5★</div>
+                        <div class="text-sm">Rated Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative animate-fade-in-up" style="animation-delay: 0.3s;">
+                <div class="glass-effect p-8 rounded-3xl">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-crown text-gold text-6xl mb-4"></i>
+                        <h3 class="text-white text-2xl font-bold">Premium Service Guarantee</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-white">
+                            <i class="fas fa-check-circle text-gold text-xl"></i>
+                            <span>Fast 15-30 Minute Response</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i class="fas fa-check-circle text-gold text-xl"></i>
+                            <span>Upfront Transparent Pricing</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i class="fas fa-check-circle text-gold text-xl"></i>
+                            <span>100% Satisfaction Guarantee</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-white">
+                            <i class="fas fa-check-circle text-gold text-xl"></i>
+                            <span>Licensed & Bonded Technicians</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Our Premium Services</h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    From emergency lockouts to high-security installations, we provide comprehensive locksmith solutions with royal treatment.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Emergency Lockout -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-door-open text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Emergency Lockout</h3>
+                    <p class="text-gray-600 mb-6">Locked out of your home, car, or office? Our rapid response team is available 24/7 for emergency lockout situations.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> 15-30 minute response time</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> No damage guarantee</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Available 24/7/365</li>
+                    </ul>
+                </div>
+
+                <!-- Lock Installation -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Lock Installation</h3>
+                    <p class="text-gray-600 mb-6">Professional installation of high-security locks, smart locks, and commercial grade security systems.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> High-security locks</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Smart lock systems</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Commercial solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Key Services -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-key text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Key Services</h3>
+                    <p class="text-gray-600 mb-6">Complete key cutting, duplication, and replacement services for residential, commercial, and automotive needs.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Key cutting & duplication</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> High-security keys</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Master key systems</li>
+                    </ul>
+                </div>
+
+                <!-- Automotive -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-car text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Automotive Locksmith</h3>
+                    <p class="text-gray-600 mb-6">Car lockouts, key programming, transponder keys, and ignition repair services for all vehicle makes and models.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Car lockout service</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Transponder programming</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Ignition repair</li>
+                    </ul>
+                </div>
+
+                <!-- Commercial -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Commercial Security</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive security solutions for businesses including access control, master key systems, and security consultations.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Access control systems</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Master key systems</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Security consultations</li>
+                    </ul>
+                </div>
+
+                <!-- Safe Services -->
+                <div class="service-card bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="gold-gradient w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-vault text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#221f1f] mb-4">Safe Services</h3>
+                    <p class="text-gray-600 mb-6">Safe opening, installation, and repair services for residential and commercial safes of all types and brands.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Safe opening</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Safe installation</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold"></i> Combination changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="service-areas" class="py-24 dark-gradient">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-white mb-6">Service Areas</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Proudly serving Hackensack, NJ and surrounding communities with premium locksmith services.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="text-white font-bold text-lg mb-2">Hackensack</h3>
+                    <p class="text-gray-300 text-sm">Primary Service Area</p>
+                </div>
+                <div class="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="text-white font-bold text-lg mb-2">Lodi</h3>
+                    <p class="text-gray-300 text-sm">Full Service Coverage</p>
+                </div>
+                <div class="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="text-white font-bold text-lg mb-2">Teaneck</h3>
+                    <p class="text-gray-300 text-sm">24/7 Emergency</p>
+                </div>
+                <div class="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="text-white font-bold text-lg mb-2">Maywood</h3>
+                    <p class="text-gray-300 text-sm">Rapid Response</p>
+                </div>
+                <div class="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-map-marker-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="text-white font-bold text-lg mb-2">South Hackensack</h3>
+                    <p class="text-gray-300 text-sm">Complete Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">What Our Customers Say</h2>
+                <p class="text-xl text-gray-700">Join thousands of satisfied customers who trust Royal Locksmith</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Absolutely amazing service! Got locked out at midnight and they were here in 20 minutes. Professional, fast, and reasonably priced."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#221f1f]">Sarah M.</h4>
+                            <p class="text-sm text-gray-500">Hackensack, NJ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Had my office locks upgraded. The technician was knowledgeable and recommended the perfect security solution for our needs."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#221f1f]">Mike R.</h4>
+                            <p class="text-sm text-gray-500">Teaneck, NJ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Car key programming done perfectly. They saved me hundreds compared to the dealership. Highly recommend!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#221f1f]">Jennifer L.</h4>
+                            <p class="text-sm text-gray-500">Lodi, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us" class="py-24 dark-gradient">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+                <h2 class="text-5xl font-bold mb-6">Why Choose <span class="text-gold">Royal Locksmith?</span></h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    With years of experience serving the Hackensack community, we've built our reputation on trust, reliability, and exceptional service quality.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="gold-gradient w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-certificate text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Licensed & Insured</h3>
+                            <p class="text-gray-300">NJ DCA License #13VH13550300. Fully bonded and insured for your peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="gold-gradient w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">24/7 Emergency Service</h3>
+                            <p class="text-gray-300">Available around the clock for all your emergency locksmith needs.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="gold-gradient w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-tools text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Expert Technicians</h3>
+                            <p class="text-gray-300">Our skilled professionals use the latest tools and techniques for superior results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-effect p-8 rounded-3xl">
+                <div class="text-center mb-6">
+                    <i class="fas fa-award text-gold text-6xl mb-4"></i>
+                    <h3 class="text-white text-2xl font-bold">Our Commitment</h3>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="bg-white bg-opacity-10 p-4 rounded-2xl">
+                        <div class="text-2xl font-bold text-gold">1000+</div>
+                        <div class="text-white text-sm">Happy Customers</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-2xl">
+                        <div class="text-2xl font-bold text-gold">5★</div>
+                        <div class="text-white text-sm">Average Rating</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-2xl">
+                        <div class="text-2xl font-bold text-gold">24/7</div>
+                        <div class="text-white text-sm">Emergency Service</div>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-2xl">
+                        <div class="text-2xl font-bold text-gold">100%</div>
+                        <div class="text-white text-sm">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-cream">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-700">Get answers to the most common questions about our locksmith services</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="faq-item p-6 cursor-pointer border-b border-gray-100">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-[#221f1f]">How quickly can you respond to emergency calls?</h3>
+                            <i class="fas fa-chevron-down text-gold text-xl faq-icon transition-transform duration-300"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600 hidden">
+                            <p>We typically respond to emergency lockout calls within 15-30 minutes, depending on your location and traffic conditions. Our technicians are strategically positioned throughout our service areas to ensure rapid response times.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="faq-item p-6 cursor-pointer border-b border-gray-100">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-[#221f1f]">Do you provide upfront pricing?</h3>
+                            <i class="fas fa-chevron-down text-gold text-xl faq-icon transition-transform duration-300"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600 hidden">
+                            <p>Yes, we believe in transparent pricing. After assessing your situation, we'll provide you with a clear, upfront quote before beginning any work. No hidden fees or surprise charges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="faq-item p-6 cursor-pointer border-b border-gray-100">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-[#221f1f]">Are you licensed and insured?</h3>
+                            <i class="fas fa-chevron-down text-gold text-xl faq-icon transition-transform duration-300"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600 hidden">
+                            <p>Absolutely! We hold NJ DCA License #13VH13550300 and are fully bonded and insured. This protects both you and us during all service calls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="faq-item p-6 cursor-pointer border-b border-gray-100">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-[#221f1f]">What types of locks can you install?</h3>
+                            <i class="fas fa-chevron-down text-gold text-xl faq-icon transition-transform duration-300"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600 hidden">
+                            <p>We install all types of locks including deadbolts, smart locks, high-security locks, commercial grade locks, and specialty security systems. We work with all major brands and can recommend the best solution for your needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="faq-item p-6 cursor-pointer">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-[#221f1f]">Do you offer warranty on your services?</h3>
+                            <i class="fas fa-chevron-down text-gold text-xl faq-icon transition-transform duration-300"></i>
+                        </div>
+                        <div class="faq-answer mt-4 text-gray-600 hidden">
+                            <p>Yes, we stand behind our work with a comprehensive warranty on both parts and labor. The specific warranty terms depend on the type of service provided, and we'll explain all warranty details before beginning work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 dark-gradient">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-white mb-6">Get In Touch</h2>
+                <p class="text-xl text-gray-300">Ready for premium locksmith service? Contact us today!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="glass-effect p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Emergency Contact</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="gold-gradient w-14 h-14 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">24/7 Emergency Line</h4>
+                                    <a href="tel:+15512928090" class="text-gold text-xl font-bold hover:underline">(551) 292-8090</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="gold-gradient w-14 h-14 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Email Support</h4>
+                                    <a href="mailto:support@royallocksmithnj.com" class="text-gold hover:underline">support@royallocksmithnj.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="gold-gradient w-14 h-14 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-clock text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Service Hours</h4>
+                                    <p class="text-gray-300">24/7 Emergency Service Available</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="gold-gradient w-14 h-14 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-certificate text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">License</h4>
+                                    <p class="text-gray-300">NJ DCA License #13VH13550300</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-effect p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold text-white mb-6">Request Service</h3>
+                    <form id="book" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-white font-medium mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-300 border border-gray-600 focus:border-gold focus:outline-none" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-white font-medium mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-300 border border-gray-600 focus:border-gold focus:outline-none" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-white font-medium mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-300 border border-gray-600 focus:border-gold focus:outline-none" placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-white font-medium mb-2">Service Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-white bg-opacity-20 text-white border border-gray-600 focus:border-gold focus:outline-none">
+                                <option value="">Select a service</option>
+                                <option value="emergency-lockout">Emergency Lockout</option>
+                                <option value="lock-installation">Lock Installation</option>
+                                <option value="key-services">Key Services</option>
+                                <option value="automotive">Automotive Locksmith</option>
+                                <option value="commercial">Commercial Security</option>
+                                <option value="safe-services">Safe Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-white font-medium mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl bg-white bg-opacity-20 text-white placeholder-gray-300 border border-gray-600 focus:border-gold focus:outline-none resize-none" placeholder="Describe your locksmith needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full gold-gradient text-white py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Modern Footer -->
+    <footer class="bg-[#1c1b1b] text-[#f8f9fa] pt-16 pb-8 border-t-4 border-[#F58600]">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Top Section: Contact & Call to Action -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- Company Info -->
+        <div class="space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
+            <!-- Centered Logo -->
+            <div class="flex justify-center md:justify-start w-full">
+            <img src="./images/royal-locksmith-logo.webp" alt="Royal Locksmith Logo" class="w-40 h-auto">
+            </div>
+            
+            <p class="text-sm text-gray-300"><span class="material-icons align-middle text-[#ea9e25] mr-1">badge</span> NJ DCA License #13VH13550300</p>
+            <p class="text-gray-400"><span class="material-icons align-middle text-[#ea9e25] mr-1">lock</span> Premium locksmith services for Hackensack, NJ & surrounding areas. Licensed, insured, available 24/7 for all your security needs.</p>
+            <p class="text-[#ea9e25] font-semibold"><span class="material-icons align-middle mr-1">schedule</span> Available 24/7 for Emergencies</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="grid grid-cols-1 gap-4">
+            <div class="bg-[#2a2929] border-l-4 border-[#ea9e25] rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+            <p class="text-gray-300 font-medium mb-2"><span class="material-icons align-middle mr-1">support_agent</span> Need Emergency Service?</p>
+            <a href="tel:+15512928090" class="flex items-center gap-2 bg-[#ea9e25] text-[#1c1b1b] font-bold px-4 py-3 rounded-md hover:scale-105 transition-transform duration-300">
+                <span class="material-icons">phone</span>
+                (551) 292-8090
+            </a>
+            </div>
+
+            <div class="bg-[#2a2929] border-l-4 border-[#ea9e25] rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+            <p class="text-gray-300 font-medium mb-2"><span class="material-icons align-middle mr-1">mail</span> Send us an Email</p>
+            <a href="mailto:support@royallocksmithnj.com" class="flex items-center gap-2 bg-[#ea9e25] text-[#1c1b1b] font-bold px-4 py-3 rounded-md hover:scale-105 transition-transform duration-300">
+                <span class="material-icons">email</span>
+                support@royallocksmithnj.com
+            </a>
+            </div>
+        </div>
+        </div>
+
+
+            <!-- Middle Section: Links -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            
+                <div>
+                    <h4 class="text-lg font-bold text-[#ea9e25] mb-4 flex flex-col gap-2 relative">
+                        Services
+                        <span class="block w-10 h-0.5 bg-[#ea9e25] mt-1"></span> <!-- short line -->
+                    </h4>
+                    <ul class="space-y-2">
+                        <li><a href="./services/emergency-locksmith.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-2"><span class="material-icons text-[#ea9e25] text-sm">local_police</span> Emergency Locksmith</a></li>
+                        <li><a href="./services/residential-locksmith.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-2"><span class="material-icons text-[#ea9e25] text-sm">home</span> Residential Locksmith</a></li>
+                        <li><a href="./services/commercial-locksmith.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-2"><span class="material-icons text-[#ea9e25] text-sm">business</span> Commercial Locksmith</a></li>
+                        <li><a href="./services/auto-locksmith.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-2"><span class="material-icons text-[#ea9e25] text-sm">directions_car</span> Auto Locksmith</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div>
+                    <h4 class="text-lg font-bold text-[#ea9e25] mb-4 flex flex-col gap-2 relative">
+                        Service Areas
+                        <span class="block w-10 h-0.5 bg-[#ea9e25] mt-1"></span>
+                    </h4>
+                    <ul class="space-y-2 text-gray-200 flex flex-col gap-1">
+                        <li><span class="material-icons text-[#ea9e25] text-sm align-middle">location_on</span> Hackensack, NJ</li>
+                        <li><span class="material-icons text-[#ea9e25] text-sm align-middle">location_on</span> Lodi, NJ</li>
+                        <li><span class="material-icons text-[#ea9e25] text-sm align-middle">location_on</span> Teaneck, NJ</li>
+                        <li><span class="material-icons text-[#ea9e25] text-sm align-middle">location_on</span> Maywood, NJ</li>
+                        <li><span class="material-icons text-[#ea9e25] text-sm align-middle">location_on</span> South Hackensack, NJ</li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-[#ea9e25] mb-4 flex flex-col gap-2 relative">
+                        Quick Links
+                        <span class="block w-10 h-0.5 bg-[#ea9e25] mt-1"></span>
+                    </h4>
+                    <ul class="space-y-2 text-gray-200">
+                        <li><a href="services.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> Services</a></li>
+                        <li><a href="service-areas.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> Service Areas</a></li>
+                        <li><a href="faq.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> FAQ</a></li>
+                        <li><a href="reviews.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> Reviews</a></li>
+                        <li><a href="about.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1"><span class="material-icons text-[#ea9e25] text-sm">arrow_right</span> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+                    <h4 class="text-lg font-bold text-[#ea9e25] mb-4 flex flex-col gap-2 relative">
+                        Follow Us
+                        <span class="block w-10 h-0.5 bg-[#ea9e25] mt-1"></span>
+                    </h4>
+                    <p class="text-gray-400 mb-4"><span class="material-icons align-middle text-[#ea9e25] mr-1">share</span> Connect with us on social media:</p>
+                    
+                    <div class="flex gap-4">
+
+                    <!-- Facebook -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.242 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                    </svg>
+                    </a>
+
+                    <!-- Google -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#DB4437] hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 533.5 544.3">
+                        <path fill="currentColor" d="M533.5 278.4c0-17.3-1.5-34-4.3-50.3H272v95h146.9c-6.4 34-25.8 62.8-55.3 82.1v68.2h89.3c52.1-48 81.6-118.7 81.6-194z"/>
+                        <path fill="#0F9D58" d="M272 544.3c74 0 136-24.6 181-66.9l-89.3-68.2c-25 16.7-57 26.4-91.7 26.4-70.6 0-130.5-47.6-152-111.6H29v70.1C73 480.5 166 544.3 272 544.3z"/>
+                        <path fill="#F4B400" d="M120 322.1c-10.7-31.7-10.7-65.4 0-97.1V154.9H29c-38.2 75.8-38.2 166.6 0 242.4l91-74.2z"/>
+                        <path fill="#4285F4" d="M272 107.4c39.8-.6 78.4 14.2 107.6 40.9l80.8-80.8C408.7 23.7 345.9-.5 272 0 166 0 73 63.8 29 154.9l91 70.1c21.5-64 81.4-111.6 152-117.6z"/>
+                    </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#feda75] via-[#fa7e1e] to-[#d62976] hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.97.24 2.434.403.59.201 1.01.443 1.452.885.442.442.684.862.885 1.452.163.464.347 1.264.403 2.434.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.434-.201.59-.443 1.01-.885 1.452-.442.442-.862.684-1.452.885-.464.163-1.264.347-2.434.403-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.434-.403-.59-.201-1.01-.443-1.452-.885-.442-.442-.684-.862-.885-1.452-.163-.464-.347-1.264-.403-2.434C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.434.201-.59.443-1.01.885-1.452.442-.442.862-.684 1.452-.885.464-.163 1.264-.347 2.434-.403C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.735 0 8.332.012 7.052.07 5.768.127 4.867.312 4.058.58c-.82.274-1.518.642-2.21 1.335-.693.692-1.061 1.39-1.335 2.21-.268.809-.453 1.71-.51 2.994C.012 8.332 0 8.735 0 12c0 3.265.012 3.668.07 4.948.057 1.284.242 2.185.51 2.994.274.82.642 1.518 1.335 2.21.692.693 1.39 1.061 2.21 1.335.809.268 1.71.453 2.994.51C8.332 23.988 8.735 24 12 24s3.668-.012 4.948-.07c1.284-.057 2.185-.242 2.994-.51.82-.274 1.518-.642 2.21-1.335.693-.692 1.061-1.39 1.335-2.21.268-.809.453-1.71.51-2.994.058-1.28.07-1.683.07-4.948s-.012-3.668-.07-4.948c-.057-1.284-.242-2.185-.51-2.994-.274-.82-.642-1.518-1.335-2.21-.692-.693-1.39-1.061-2.21-1.335-.809-.268-1.71-.453-2.994-.51C15.668.012 15.265 0 12 0z"/>
+                        <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+                        <circle cx="18.406" cy="5.594" r="1.44"/>
+                    </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#FF0000] hover:scale-110 transition-transform duration-300">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 576 512" fill="currentColor">
+                        <path d="M549.655 124.083c-6.281-23.725-24.812-42.254-48.537-48.535C456.093 64 288 64 288 64s-168.093 0-213.118 11.548c-23.725 6.281-42.256 24.81-48.537 48.535C16 169.11 16 256 16 256s0 86.89 10.345 131.917c6.281 23.725 24.812 42.254 48.537 48.535C119.907 448 288 448 288 448s168.093 0 213.118-11.548c23.725-6.281 42.256-24.81 48.537-48.535C560 342.89 560 256 560 256s0-86.89-10.345-131.917zM232 336V176l142 80-142 80z"/>
+                    </svg>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Legal (Centered) -->
+            <div class="border-t border-gray-700 pt-6 flex flex-col items-center gap-4 text-sm">
+
+                <!-- Copyright -->
+                <p class="text-gray-400">© 2025 Royal Locksmith. All rights reserved.</p>
+
+                <!-- Made with ❤️ -->
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-200">Made with</span>
+                    <span class="animate-bounce text-[#ea9e25] text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                                    4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 
+                                    14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                                    6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </span>
+                    <span class="text-gray-200">by</span>
+                    <a href="https://gettmarketing.com/" target="_blank" 
+                    class="text-[#ea9e25] font-bold hover:scale-110 transition-transform duration-300">
+                    Gett Marketing
+                    </a>
+                </div>
+
+                <!-- Legal Links -->
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="privacy-policy.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1">
+                    Privacy Policy
+                    </a>
+                    <a href="terms-and-conditions.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1">
+                    Terms & Conditions
+                    </a>
+                    <a href="accessibility-policy.html" class="hover:text-[#ea9e25] transition duration-300 flex items-center gap-1">
+                    Accessibility
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button with Gold Gradient -->
+    <a href="tel:+15512928090" 
+        class="fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl transition-transform duration-300 hover:scale-110 z-30"
+        style="background: linear-gradient(135deg, #ea9e25 0%, #f5c471 100%);">
+        <span class="material-icons">call</span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                
+                // Close all other FAQs
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.faq-answer').classList.add('hidden');
+                        otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth Scrolling for Anchor Links
+        const anchors = document.querySelectorAll('a[href^="#"]');
+        anchors.forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const navHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - navHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards and sections
+        document.querySelectorAll('.service-card, .glass-effect').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form Submission
+        document.getElementById('book').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your service request! We will contact you shortly to confirm your appointment.');
+        });
+    </script>
+
+</body>
+</html>
