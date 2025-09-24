@@ -199,7 +199,7 @@
 
 
             <!-- Right: Booking Form -->
-            <div class="relative animate-fade-in-up">
+            <div class="relative animate-fade-in-up " id="booking">
                 <div class="bg-[#f8f0e3] rounded-xl shadow-2xl p-6 w-full max-w-lg md:max-w-xl lg:max-w-2xl border-2 border-[#ea9e25]">
                     <h3 class="text-2xl font-black mb-2 text-[#221f1f] text-center">
                         Book a <span class="text-[#ea9e25]">Royal Locksmith</span>
@@ -247,6 +247,280 @@
             </div>
         </div>
     </section>
+
+        <!-- Service Area Overview Section -->
+    <section class="bg-[#f8f0e3] py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-12">
+            Service Area Overview
+            <span class="block mt-2 text-[#ea9e25] text-xl md:text-2xl">We bring our expertise directly to your location in South Bend</span>
+            </h2>
+
+            <p class="text-lg md:text-xl text-[#0C0000] mb-16 max-w-3xl mx-auto">
+            At I Locksmith, we bring our expertise directly to your location. With fully equipped service vehicles, we deliver residential, automotive, and commercial locksmith services across the greater South Bend area.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="grid gap-12 md:grid-cols-3 text-left">
+            <!-- Emergency Response -->
+            <div class="flex flex-col items-center bg-white rounded-3xl shadow-xl p-6 border-2 border-[#ea9e25] hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-[#ea9e25] text-5xl mb-4">access_time</span>
+                <h3 class="text-2xl font-bold mb-2 text-[#221f1f]">Emergency Response</h3>
+                <p class="text-gray-600 text-center">Average arrival time of 30 minutes or less for emergencies in South Bend.</p>
+            </div>
+
+            <!-- Flexible Scheduling -->
+            <div class="flex flex-col items-center bg-white rounded-3xl shadow-xl p-6 border-2 border-[#ea9e25] hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-[#ea9e25] text-5xl mb-4">calendar_today</span>
+                <h3 class="text-2xl font-bold mb-2 text-[#221f1f]">Flexible Scheduling</h3>
+                <p class="text-gray-600 text-center">Book standard appointments Monday through Saturday at your convenience.</p>
+            </div>
+
+            <!-- 24/7 Availability -->
+            <div class="flex flex-col items-center bg-white rounded-3xl shadow-xl p-6 border-2 border-[#ea9e25] hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-[#ea9e25] text-5xl mb-4">support_agent</span>
+                <h3 class="text-2xl font-bold mb-2 text-[#221f1f]">24/7 Availability</h3>
+                <p class="text-gray-600 text-center">Count on us for round-the-clock emergency locksmith coverage, every day of the year.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with 2 Columns -->
+    <section class="bg-[#f8f0e3] py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Our Royal Locksmith Services</h2>
+                <p class="text-xl text-gray-700">Royal Locksmith offers a complete range of locksmith services to secure your home, business, or vehicle. Our certified experts are available 24/7 for emergency lockouts, residential upgrades, commercial security, and automotive key solutions.</p>
+            </div>
+            <!-- Services Grid - 2 Columns -->
+            <div class="grid gap-12 md:grid-cols-2">
+
+            <!-- Card Template -->
+            <div class="service-card relative rounded-3xl shadow-xl border-[3px] border-[#ea9e25] overflow-hidden transition-transform duration-500 hover:scale-105">
+                <div class="absolute inset-0 bg-[url('./images/emergency-locksmith.webp')] bg-cover bg-center transition-transform duration-500 transform hover:scale-110"></div>
+                <div class="absolute inset-0 bg-black/70 hover:bg-black/50 transition-all duration-500"></div> <!-- overlay -->
+                <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+                <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-4">Emergency Locksmith</h3>
+                <p class="mb-4 text-left">
+                    Locked out? Royal Locksmith provides fast and reliable emergency lockout services for cars, homes, businesses, and storage units. Available 24/7.
+                </p>
+                <ul class="text-left space-y-2 mb-4">
+                    <li class="flex items-center"><span class="material-icons mr-2">flash_on</span>Quick Response in 15-30 minutes</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">support_agent</span>Professional & Certified Technicians</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">security</span>Safe & Damage-Free Entry</li>
+                </ul>
+                <p class="text-left mb-4"><strong>How it Works:</strong> Call our emergency line, provide your location, and our mobile locksmith arrives ready to unlock your property safely.</p>
+                <a href="./services/emergency-locksmith.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-[#221f1f] bg-[#ea9e25] rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 mt-auto">
+                    Learn More <span class="material-icons text-lg">arrow_right_alt</span>
+                </a>
+                </div>
+            </div>
+
+            <!-- Repeat similar structure for Residential, Commercial, Automotive -->
+            <div class="service-card relative rounded-3xl shadow-xl border-[3px] border-[#ea9e25] overflow-hidden transition-transform duration-500 hover:scale-105">
+                <div class="absolute inset-0 bg-[url('./images/residential-locksmith.webp')] bg-cover bg-center transition-transform duration-500 transform hover:scale-110"></div>
+                <div class="absolute inset-0 bg-black/70 hover:bg-black/50 transition-all duration-500"></div>
+                <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+                <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-4">Residential Locksmith</h3>
+                <p class="mb-4 text-left">Secure your home with Royal Locksmith. We handle lock replacement, rekeying, repairs, and gate locks to keep your family safe.</p>
+                <ul class="text-left space-y-2 mb-4">
+                    <li class="flex items-center"><span class="material-icons mr-2">home</span>Enhanced Home Security</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">lock</span>Fast & Professional Service</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">verified_user</span>Certified & Insured Technicians</li>
+                </ul>
+                <p class="text-left mb-4"><strong>How it Works:</strong> Schedule a visit, our technician evaluates your locks, and upgrades or repairs them efficiently while ensuring your safety.</p>
+                <a href="./services/residential-locksmith.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-[#221f1f] bg-[#ea9e25] rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 mt-auto">
+                    Learn More <span class="material-icons text-lg">arrow_right_alt</span>
+                </a>
+                </div>
+            </div>
+
+            <div class="service-card relative rounded-3xl shadow-xl border-[3px] border-[#ea9e25] overflow-hidden transition-transform duration-500 hover:scale-105">
+                <div class="absolute inset-0 bg-[url('./images/commercial-locksmith.webp')] bg-cover bg-center transition-transform duration-500 transform hover:scale-110"></div>
+                <div class="absolute inset-0 bg-black/70 hover:bg-black/50 transition-all duration-500"></div>
+                <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+                <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-4">Commercial Locksmith</h3>
+                <p class="mb-4 text-left">Protect your business with Royal Locksmith. Master keys, access control, and emergency exit devices for offices, warehouses, and stores.</p>
+                <ul class="text-left space-y-2 mb-4">
+                    <li class="flex items-center"><span class="material-icons mr-2">business</span>Advanced Access Control</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">security</span>Emergency Lock Solutions</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">verified</span>Licensed & Insured Experts</li>
+                </ul>
+                <p class="text-left mb-4"><strong>How it Works:</strong> Contact us for a consultation, we analyze your property security, install or maintain locks efficiently.</p>
+                <a href="./services/commercial-locksmith.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-[#221f1f] bg-[#ea9e25] rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 mt-auto">
+                    Learn More <span class="material-icons text-lg">arrow_right_alt</span>
+                </a>
+                </div>
+            </div>
+
+            <div class="service-card relative rounded-3xl shadow-xl border-[3px] border-[#ea9e25] overflow-hidden transition-transform duration-500 hover:scale-105">
+                <div class="absolute inset-0 bg-[url('./images/auto-locksmith.webp')] bg-cover bg-center transition-transform duration-500 transform hover:scale-110"></div>
+                <div class="absolute inset-0 bg-black/70 hover:bg-black/50 transition-all duration-500"></div>
+                <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+                <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-4">Automotive Locksmith</h3>
+                <p class="mb-4 text-left">Locked out of your car or need a new key? Royal Locksmith provides car key replacement, fob programming, duplicates, and ignition repairs for all makes and models.</p>
+                <ul class="text-left space-y-2 mb-4">
+                    <li class="flex items-center"><span class="material-icons mr-2">directions_car</span>Quick On-Site Service</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">key</span>Duplicate & Replacement Keys</li>
+                    <li class="flex items-center"><span class="material-icons mr-2">speed</span>Ignition & Key Fob Solutions</li>
+                </ul>
+                <p class="text-left mb-4"><strong>How it Works:</strong> Call us, provide your car make/model, our technician programs or cuts a key and gets you back on the road quickly.</p>
+                <a href="./services/auto-locksmith.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-[#221f1f] bg-[#ea9e25] rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 mt-auto">
+                    Learn More <span class="material-icons text-lg">arrow_right_alt</span>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="service-areas" class="py-24 bg-[#f8f0e3]">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Service Areas</h2>
+                <p class="text-xl text-gray-700"> Proudly serving Hackensack, NJ and surrounding communities with premium locksmith services.</p>
+            </div>
+
+
+            <!-- Full-Width Map -->
+            <div class="rounded-3xl overflow-hidden border-[3px] border-[#ea9e25] shadow-xl">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.920115672762!2d-74.07419468459338!3d40.88593247930795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6e313bcb7b5%3A0xa1f7f0de7a1d64b9!2sHackensack%2C%20NJ!5e0!3m2!1sen!2sus!4v1695587640000!5m2!1sen!2sus"
+                width="100%"
+                height="600"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities We Serve Section -->
+    <section class="bg-[#f8f0e3] py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Cities We Serve</h2>
+            <p class="text-xl text-gray-700">Fast, reliable locksmith services across New Jersey</p>
+        </div>
+        
+        <!-- First Row: 3 Cards -->
+        <div class="grid gap-12 md:grid-cols-3 text-left mb-12">
+        <!-- Hackensack -->
+        <div class="relative bg-[url('./images/hackensack.webp')] bg-cover bg-center rounded-3xl shadow-xl border-2 border-[#ea9e25] hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+            <div class="absolute inset-0 bg-black/70 rounded-3xl"></div>
+            <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+            <span class="material-icons text-[#ea9e25] text-5xl mb-4">location_on</span>
+            <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-2">Hackensack, NJ</h3>
+            <p class="mb-2">Our home base—fastest response for residential, commercial, and automotive locksmith needs.</p>
+            <ul class="mb-4 space-y-2">
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">home</span> Residential: lockouts, rekeying, home security upgrades</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">business</span> Commercial: master keys, access control, office security</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">directions_car</span> Automotive: car lockouts, key replacements, ignition repairs</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">alarm</span> Average emergency response: 25-30 minutes</li>
+            </ul>
+            <a href="#booking" class="mt-auto bg-[#ea9e25] hover:bg-[#d38c1f] text-white font-semibold py-2 px-4 rounded-lg transition-colors transform hover:scale-105 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Request Service
+            </a>
+            </div>
+        </div>
+
+        <!-- Lodi -->
+        <div class="relative bg-[url('./images/lodi.webp')] bg-cover bg-center rounded-3xl shadow-xl border-2 border-[#ea9e25] hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+            <div class="absolute inset-0 bg-black/70 rounded-3xl"></div>
+            <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+            <span class="material-icons text-[#ea9e25] text-5xl mb-4">location_on</span>
+            <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-2">Lodi, NJ</h3>
+            <p class="mb-2">Trusted locksmiths for rekeying, lockouts, and advanced business lock solutions.</p>
+            <ul class="mb-4 space-y-2">
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">home</span> Residential: home lock repair and replacement</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">business</span> Commercial: secure access, emergency lock solutions</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">directions_car</span> Automotive: on-site key duplication and programming</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">alarm</span> Average emergency response: 30 minutes</li>
+            </ul>
+            <a href="#booking" class="mt-auto bg-[#ea9e25] hover:bg-[#d38c1f] text-white font-semibold py-2 px-4 rounded-lg transition-colors transform hover:scale-105 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Request Service
+            </a>
+            </div>
+        </div>
+
+        <!-- Teaneck -->
+        <div class="relative bg-[url('./images/teaneck.webp')] bg-cover bg-center rounded-3xl shadow-xl border-2 border-[#ea9e25] hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+            <div class="absolute inset-0 bg-black/70 rounded-3xl"></div>
+            <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+            <span class="material-icons text-[#ea9e25] text-5xl mb-4">location_on</span>
+            <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-2">Teaneck, NJ</h3>
+            <p class="mb-2">Premium mobile locksmith service for suburban homes, vehicles, and local businesses.</p>
+            <ul class="mb-4 space-y-2">
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">home</span> Residential: lock replacement, gate locks, home security upgrades</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">business</span> Commercial: office and retail lockouts, access control</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">directions_car</span> Automotive: key fobs, ignition repairs, car lockouts</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">alarm</span> Average emergency response: 30-35 minutes</li>
+            </ul>
+            <a href="#booking" class="mt-auto bg-[#ea9e25] hover:bg-[#d38c1f] text-white font-semibold py-2 px-4 rounded-lg transition-colors transform hover:scale-105 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Request Service
+            </a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Second Row: 2 Cards Centered -->
+        <div class="grid gap-12 md:grid-cols-2 justify-center text-left">
+        <!-- Maywood -->
+        <div class="relative bg-[url('./images/maywood.webp')] bg-cover bg-center rounded-3xl shadow-xl border-2 border-[#ea9e25] hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+            <div class="absolute inset-0 bg-black/70 rounded-3xl"></div>
+            <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+            <span class="material-icons text-[#ea9e25] text-5xl mb-4">location_on</span>
+            <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-2">Maywood, NJ</h3>
+            <p class="mb-2">Reliable locksmith services for homes, vehicles, and commercial properties in Maywood.</p>
+            <ul class="mb-4 space-y-2">
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">home</span> Residential: lockouts, rekeying, security upgrades</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">business</span> Commercial: master keys, emergency access control</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">directions_car</span> Automotive: car key replacements, fob programming</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">alarm</span> Average emergency response: 30 minutes</li>
+            </ul>
+            <a href="#booking" class="mt-auto bg-[#ea9e25] hover:bg-[#d38c1f] text-white font-semibold py-2 px-4 rounded-lg transition-colors transform hover:scale-105 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Request Service
+            </a>
+            </div>
+        </div>
+
+        <!-- South Hackensack -->
+        <div class="relative bg-[url('./images/south-hackensack.jpg')] bg-cover bg-center rounded-3xl shadow-xl border-2 border-[#ea9e25] hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col">
+            <div class="absolute inset-0 bg-black/70 rounded-3xl"></div>
+            <div class="p-6 flex flex-col flex-1 relative z-10 text-white">
+            <span class="material-icons text-[#ea9e25] text-5xl mb-4">location_on</span>
+            <h3 class="text-3xl md:text-4xl text-[#ea9e25] font-bold mb-2">South Hackensack, NJ</h3>
+            <p class="mb-2">Fast, professional locksmith solutions for residential, commercial, and automotive needs.</p>
+            <ul class="mb-4 space-y-2">
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">home</span> Residential: home lockouts, rekeying, lock upgrades</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">business</span> Commercial: office security, access control, emergency lockouts</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">directions_car</span> Automotive: car lockouts, key cutting, ignition service</li>
+                <li class="flex items-center gap-2"><span class="material-icons text-[#ea9e25]">alarm</span> Average emergency response: 25-30 minutes</li>
+            </ul>
+            <a href="#booking" class="mt-auto bg-[#ea9e25] hover:bg-[#d38c1f] text-white font-semibold py-2 px-4 rounded-lg transition-colors transform hover:scale-105 flex items-center justify-center gap-2">
+            <span class="material-icons">send</span>
+            Request Service
+            </a>
+
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
 
     <!-- FAQ Section -->
     <section id="faq" class="py-24 bg-[#f8f0e3]">
@@ -618,97 +892,8 @@
         </div>
     </section>
 
-    <!-- Service Areas -->
-    <section id="service-areas" class="py-24 dark-gradient">
-        <div class="max-w-7xl mx-auto px-6">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-bold text-gold mb-6">Service Areas</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Proudly serving Hackensack, NJ and surrounding communities with premium locksmith services.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <!-- First Row: 3 Cards -->
-                    <div class="relative p-6 rounded-3xl overflow-hidden bg-gradient-to-br from-[#221f1f]/70 via-[#F58600]/20 to-[#221f1f]/50 border-2 border-[#F58600] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">
-                        <div class="flex justify-center mb-4">
-                            <span class="material-icons text-gold text-5xl animate-bounce">place</span>
-                        </div>
-                        <h3 class="text-white font-bold text-xl mb-2">Hackensack</h3>
-                        <p class="text-gray-300 text-sm mb-4">Primary Service Area</p>
-                        <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-3xl">
-                            <p class="text-white font-medium text-sm px-4 text-center">Main hub for all emergency and routine locksmith services. 24/7 rapid response guaranteed.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative p-6 rounded-3xl overflow-hidden bg-gradient-to-br from-[#221f1f]/70 via-[#F58600]/20 to-[#221f1f]/50 border-2 border-[#F58600] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">
-                        <div class="flex justify-center mb-4">
-                            <span class="material-icons text-gold text-5xl animate-bounce">place</span>
-                        </div>
-                        <h3 class="text-white font-bold text-xl mb-2">Lodi</h3>
-                        <p class="text-gray-300 text-sm mb-4">Full Service Coverage</p>
-                        <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-3xl">
-                            <p class="text-white font-medium text-sm px-4 text-center">We cover all residential and commercial locations, providing emergency and planned locksmith services.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative p-6 rounded-3xl overflow-hidden bg-gradient-to-br from-[#221f1f]/70 via-[#F58600]/20 to-[#221f1f]/50 border-2 border-[#F58600] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">
-                        <div class="flex justify-center mb-4">
-                            <span class="material-icons text-gold text-5xl animate-bounce">place</span>
-                        </div>
-                        <h3 class="text-white font-bold text-xl mb-2">Teaneck</h3>
-                        <p class="text-gray-300 text-sm mb-4">24/7 Emergency</p>
-                        <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-3xl">
-                            <p class="text-white font-medium text-sm px-4 text-center">Always ready for urgent lockouts or security issues. Our team reaches your location fast.</p>
-                        </div>
-                    </div>
-
-                    <!-- Second Row: 2 Cards Centered -->
-                    <div class="lg:col-span-3 flex justify-center gap-8">
-                        <div class="relative p-6 rounded-3xl overflow-hidden bg-gradient-to-br from-[#221f1f]/70 via-[#F58600]/20 to-[#221f1f]/50 border-2 border-[#F58600] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer w-80">
-                            <div class="flex justify-center mb-4">
-                                <span class="material-icons text-gold text-5xl animate-bounce">place</span>
-                            </div>
-                            <h3 class="text-white font-bold text-xl mb-2">Maywood</h3>
-                            <p class="text-gray-300 text-sm mb-4">Rapid Response</p>
-                            <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-3xl">
-                                <p class="text-white font-medium text-sm px-4 text-center">Fastest arrival times for residential and commercial locksmith needs.</p>
-                            </div>
-                        </div>
-
-                        <div class="relative p-6 rounded-3xl overflow-hidden bg-gradient-to-br from-[#221f1f]/70 via-[#F58600]/20 to-[#221f1f]/50 border-2 border-[#F58600] shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer w-80">
-                            <div class="flex justify-center mb-4">
-                                <span class="material-icons text-gold text-5xl animate-bounce">place</span>
-                            </div>
-                            <h3 class="text-white font-bold text-xl mb-2">South Hackensack</h3>
-                            <p class="text-gray-300 text-sm mb-4">Complete Coverage</p>
-                            <div class="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-3xl">
-                                <p class="text-white font-medium text-sm px-4 text-center">Full service coverage for all locksmith solutions including commercial and residential needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Map -->
-                <div class="rounded-3xl overflow-hidden shadow-lg">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.920115672762!2d-74.07419468459338!3d40.88593247930795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6e313bcb7b5%3A0xa1f7f0de7a1d64b9!2sHackensack%2C%20NJ!5e0!3m2!1sen!2sus!4v1695587640000!5m2!1sen!2sus"
-                        width="100%"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Still Have Questions Section -->
-    <section id="contact-cta" class="py-20 bg-[#f8f0e3]">
+    <section id="contact-cta" class="py-20 bg-[#e6e0d8]">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <!-- Header -->
             <h2 class="text-4xl md:text-5xl font-extrabold text-[#221f1f] mb-6">
@@ -737,6 +922,8 @@
             </p>
         </div>
     </section>
+
+
 
     <!-- Enhanced Modern Footer -->
     <footer class="bg-[#1c1b1b] text-[#f8f9fa] pt-16 pb-8 border-t-4 border-[#F58600]">
