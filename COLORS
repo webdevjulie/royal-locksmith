@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #ea9e25;
+    --secondary-color: #221f1f;
+    --accent-color: #f8f0e3;
+    --dark-color: #221f1f;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --gray-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --gold-gradient: linear-gradient(135deg, #ea9e25 0%, #f5c471 100%);
+    --dark-gradient: linear-gradient(135deg, #221f1f 0%, #3a3636 100%);
+}
