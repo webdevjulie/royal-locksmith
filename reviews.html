@@ -46,7 +46,7 @@
 <body class="relative">
 
    <!-- Navbar -->
-    <nav id="navbar" class="bg-[linear-gradient(135deg,_#221f1f_0%,_#3a3636_100%)] text-white shadow-2xl fixed w-full z-50 transition-all duration-300">
+    <nav id="navbar" class="bg-[linear-gradient(135deg,_#221f1f_0%,_#3a3636_100%)] text-white shadow-2xl fixed w-full z-50 transition-all duration-300 border-b-2 border-yellow-500/30">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -83,7 +83,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="faqs.html" class="font-medium text-white relative transition-colors duration-300 hover:text-yellow-500 
+                    <a href="faq.html" class="font-medium text-white relative transition-colors duration-300 hover:text-yellow-500 
                         after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full
                         active:text-yellow-500 active:after:w-full">
                         FAQ
@@ -97,8 +97,6 @@
                     </a>
                 </li>
             </ul>
-
-
 
             <!-- Desktop Buttons -->
             <div class="hidden lg:flex space-x-4">
@@ -171,7 +169,7 @@
             <nav class="text-sm mb-6 bg-transparent">
                 <ol class="flex items-center justify-center space-x-2 text-gray-400">
                     <li>
-                        <a href="/" class="hover:underline hover:text-[#FD9A00] transition">Home</a>
+                        <a href="index.html" class="hover:underline hover:text-[#FD9A00] transition">Home</a>
                     </li>
                     <li><span class="mx-1 text-gray-500">/</span></li>
                     <li class="text-gray-200">Reviews</li>
@@ -197,6 +195,1041 @@
         </div>
     </section>
 
+    <section class="bg-[#f8f0e3] py-20 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl text-center">
+            <!-- Header -->
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#221f1f] mb-4">Customer Reviews & Testimonials</h2>
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+                    See what our satisfied customers are saying about our professional locksmith services.
+                </p>
+            </div>
+
+            <!-- Recent Review Highlights -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex items-start gap-4 p-6 border-2 border-[#ea9e25] rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <span class="material-icons text-[#ea9e25] text-4xl mt-1">check_circle</span>
+                    <p class="text-gray-800 font-medium leading-relaxed text-left">
+                        Fast, professional, and affordable service!
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-6 border-2 border-[#ea9e25] rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <span class="material-icons text-[#ea9e25] text-4xl mt-1">check_circle</span>
+                    <p class="text-gray-800 font-medium leading-relaxed text-left">
+                        The locksmith arrived on time and solved my lockout quickly.
+                    </p>
+                </div>
+
+                <div class="flex items-start gap-4 p-6 border-2 border-[#ea9e25] rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <span class="material-icons text-[#ea9e25] text-4xl mt-1">check_circle</span>
+                    <p class="text-gray-800 font-medium leading-relaxed text-left">
+                        Highly recommend I Locksmith for residential and commercial needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#f8f0e3] py-20 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl text-center">
+            <!-- Header -->
+            <div class="mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">What our Client Says</h2>
+                <p class="text-xl text-gray-700">Don't just take our word for it — here's what our satisfied customers have to say.</p>
+            </div>
+
+            <!-- Review Cards Grid -->
+            <div id="reviews-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Visible Cards -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <!-- ... your first card content ... -->
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <!-- Card Content -->
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Thomas P.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Port St. Lucie, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Left my keys in the trunk while shopping. They came right away and helped me get back into my car safely.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AJ</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Robert K.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RS</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Maria S.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">EM</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Amanda R.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Locked my keys in the car at work. Their quick response saved my day. Very reliable service!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">DL</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Michael B.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">CN</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Samantha C.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Port St. Lucie, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Lockout at night was stressful, but these guys came quickly and handled everything professionally. Very satisfied!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">LB</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Lucas B.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Locked my car outside the grocery store. They were fast and professional. Highly recommend!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">SD</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Sophia D.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Keys locked in my car late at night. They arrived in minutes and were very professional. Amazing service!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MT</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Mark T.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Locked out of my car during work. Their response was super fast, and the team was friendly. Excellent experience!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AC</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Alice C.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Got locked out of my car while shopping. They were fast, professional, and very helpful. Highly recommended!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">JR</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">James R.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Very satisfied with their quick car lockout service. Professional and courteous team. Will use again!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="review-card p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KN</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Karen N.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Quick response, professional staff, and excellent service. Got me back in my car safely and efficiently.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Cards -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <!-- Hidden card content -->
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                            <div class="flex items-center mb-6">
+                                <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KH</div>
+                                <div class="text-left">
+                                    <p class="text-lg font-bold text-[#221f1f]">Karen H.</p>
+                                    <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                        <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-6 relative">
+                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                                    <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                                </div>
+                                <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                                    <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                        Amazing service! Locked my keys in the car late at night. They arrived in minutes and handled everything professionally.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-1">
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                                <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Card 1 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">LB</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Lucas B.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Locked my car outside the grocery store. They were fast and professional. Highly recommend!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Card 2 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">SD</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Sophia D.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Keys locked in my car late at night. They arrived in minutes and were very professional.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 3 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MT</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Mark T.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Locked out of my car during work. Their response was super fast, and the team was friendly. Excellent experience!
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 4 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AC</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Alice C.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Got locked out of my car while shopping. They were fast, professional, and very helpful. Highly recommended!
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 5 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KN</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Karen N.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Quick response, professional staff, and excellent service. Got me back in my car safely and efficiently.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 6 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">JM</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">James M.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Port St. Lucie, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                Locked out of my car in the middle of the day. Quick response and excellent service!
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                        <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                            <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Card 7 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                    <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                        <div>
+                        <div class="flex items-center mb-6">
+                            <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">EM</div>
+                            <div class="text-left">
+                            <p class="text-lg font-bold text-[#221f1f]">Emma M.</p>
+                            <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                                <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Vero Beach, FL
+                            </p>
+                            </div>
+                        </div>
+                        <div class="mb-6 relative">
+                            <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                            <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                            </div>
+                            <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                            <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                                I accidentally locked my keys in my car. The team came fast and helped me out without hassle.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                        <div class="flex space-x-1">
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                            <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        </div>
+                            <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                                <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Card 8 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RL</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Rachel L.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Locked out at night and needed immediate help. They arrived quickly and solved the issue efficiently.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 9 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">DP</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">David P.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Emergency lockout service was prompt and professional. Really impressed by their speed and care.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 10 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">SL</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Sarah L.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Fort Pierce, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Locked out while running errands. Arrived quickly and handled the situation professionally.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 11 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MK</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Mark K.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Palm City, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Locked out of my car late at night. They arrived super fast and handled everything smoothly.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Hidden Card 12 -->
+                <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#ea9e25] to-[#221f1f] flex w-full md:w-auto">
+                <div class="bg-[#f8f0e3] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                    <div>
+                    <div class="flex items-center mb-6">
+                        <div class="avatar w-14 h-14 rounded-full bg-[#ea9e25] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AL</div>
+                        <div class="text-left">
+                        <p class="text-lg font-bold text-[#221f1f]">Alice L.</p>
+                        <p class="text-sm text-[#221f1f] flex items-center mt-1">
+                            <span class="material-icons text-sm mr-2 text-[#ea9e25]">location_on</span> Stuart, FL
+                        </p>
+                        </div>
+                    </div>
+                    <div class="mb-6 relative">
+                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#ea9e25]/20 to-[#221f1f]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#ea9e25]">format_quote</span>
+                        </div>
+                        <div class="bg-[#f8f0e3] p-6 rounded-2xl border border-[#ea9e25]/30">
+                        <p class="text-[#221f1f] leading-relaxed text-left text-base italic">
+                            Quick and professional service. I was locked out, and they helped me regain access in minutes.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                        <span class="material-icons text-[#ea9e25] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#ea9e25]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#ea9e25] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Show More / Show Less Button -->
+            <div class="mt-8 flex justify-center">
+                <button id="toggle-reviews" class="px-6 py-3 border-2 border-[#ea9e25] text-[#ea9e25] rounded-full text-base md:text-lg font-bold 
+                    hover:bg-[#ea9e25] hover:text-[#221f1f] transition-all duration-300 flex items-center justify-center gap-2">
+                    Show More
+                    <span class="material-icons">expand_more</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- Enhanced Modern Footer -->
     <footer class="bg-[#1c1b1b] text-[#f8f9fa] pt-16 pb-8 border-t-4 border-[#F58600]">
@@ -378,6 +1411,22 @@
     </a>
 
     <script src="mobile.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-reviews');
+        const hiddenCards = document.querySelectorAll('#reviews-grid .review-card.hidden');
+
+        toggleBtn.addEventListener('click', () => {
+            hiddenCards.forEach(card => card.classList.toggle('hidden'));
+            
+            if(hiddenCards[0].classList.contains('hidden')){
+                toggleBtn.innerHTML = `Show More <span class="material-icons">expand_more</span>`;
+            } else {
+                toggleBtn.innerHTML = `Show Less <span class="material-icons">expand_less</span>`;
+            }
+        });
+    </script>
+
 
 </body>
 </html>

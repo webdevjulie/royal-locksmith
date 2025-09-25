@@ -41,12 +41,21 @@
             scrollbar-color: #ea9e25 #221f1f; /* thumb track */
         }
 
+        .faq-answer {
+            transition: max-height 0.5s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+
     </style>
 </head>
 <body class="relative">
 
    <!-- Navbar -->
-    <nav id="navbar" class="bg-[linear-gradient(135deg,_#221f1f_0%,_#3a3636_100%)] text-white shadow-2xl fixed w-full z-50 transition-all duration-300">
+    <nav id="navbar" class="bg-[linear-gradient(135deg,_#221f1f_0%,_#3a3636_100%)] text-white shadow-2xl fixed w-full z-50 transition-all duration-300 border-b-2 border-yellow-500/30">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -83,7 +92,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="faqs.html" class="font-medium text-white relative transition-colors duration-300 hover:text-yellow-500 
+                    <a href="faq.html" class="font-medium text-white relative transition-colors duration-300 hover:text-yellow-500 
                         after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full
                         active:text-yellow-500 active:after:w-full">
                         FAQ
@@ -97,8 +106,6 @@
                     </a>
                 </li>
             </ul>
-
-
 
             <!-- Desktop Buttons -->
             <div class="hidden lg:flex space-x-4">
@@ -160,7 +167,7 @@
 
     <!-- Page Header - Brand Orange Style -->
     <section class="relative bg-cover bg-center text-white min-h-screen flex items-center justify-center text-center px-6"
-            style="background-image: url('./images/faq.webp');">
+            style="background-image: url('./images/faqs.webp');">
 
         <!-- Dark overlay for readability -->
         <div class="absolute inset-0 bg-black/70"></div>
@@ -171,7 +178,7 @@
             <nav class="text-sm mb-6 bg-transparent">
                 <ol class="flex items-center justify-center space-x-2 text-gray-400">
                     <li>
-                        <a href="/" class="hover:underline hover:text-[#FD9A00] transition">Home</a>
+                        <a href="index.html" class="hover:underline hover:text-[#FD9A00] transition">Home</a>
                     </li>
                     <li><span class="mx-1 text-gray-500">/</span></li>
                     <li class="text-gray-200">FAQs</li>
@@ -197,6 +204,458 @@
         </div>
     </section>
 
+    <section id="faq" class="py-24 bg-[#f8f0e3]">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-[#221f1f] mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-700">Get answers to the most common questions about our locksmith services</p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="flex flex-col mb-8 gap-4">
+                <!-- Search Bar -->
+                <input type="text" id="faq-search" placeholder="Search FAQs..." 
+                    class="w-full md:w-1/2 p-3 rounded-xl border-2 border-[#ea9e25] focus:outline-none focus:ring-2 focus:ring-[#ea9e25] transition mx-auto" />
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="all">ALL</button>
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="general">GENERAL</button>
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="residential">RESIDENTIAL</button>
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="commercial">COMMERCIAL</button>
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="emergency">EMERGENCY</button>
+                    <button class="faq-filter px-4 py-2 rounded-full border-2 border-[#ea9e25] text-[#ea9e25] font-semibold hover:bg-[#ea9e25] hover:text-[#221f1f] transition" data-filter="auto">AUTO</button>
+                </div>
+            </div>
+
+            <!-- FAQ Grid -->
+            <div id="faq-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Example FAQ Card -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="general">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">lock</span>
+                            How quickly can you respond to emergency calls?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>We typically respond to emergency lockout calls within 15-30 minutes, depending on your location and traffic conditions.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 2 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">home</span>
+                            Can you handle residential lock installations?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we specialize in installing, repairing, and replacing residential locks, including smart locks and deadbolts.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 3 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="commercial">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">apartment</span>
+                            Do you provide commercial locksmith services?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Absolutely! We service offices, retail spaces, and commercial properties with high-security locks and access control systems.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 4 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="emergency">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">warning</span>
+                            What do I do during a lockout emergency?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Contact us immediately. Our emergency locksmiths are available 24/7 and will reach you quickly to resolve your lockout.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 5 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="auto">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">directions_car</span>
+                            Can you help with car lockouts?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we provide quick automotive lockout services, including key replacement and programming for modern vehicles.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 6 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="general">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">help_outline</span>
+                            Are your services guaranteed?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, all our services come with a satisfaction guarantee. We ensure your locks are secure and properly installed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 7 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">home_repair_service</span>
+                            Do you offer lock repair for homes?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we repair damaged locks, replace cylinders, and upgrade home security efficiently and reliably.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 8 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="commercial">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">business</span>
+                            Can you secure commercial properties after hours?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we provide emergency and scheduled services to secure commercial buildings outside regular business hours.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 9 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="emergency">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">emergency</span>
+                            Do you handle lockouts during holidays?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, our emergency locksmiths are available 24/7, including holidays, to assist with any lockout situation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 10 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="auto">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">directions_car_filled</span>
+                            Can you make a replacement key for my car on the spot?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we carry the tools and equipment to cut and program car keys on-site for most vehicle makes and models.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 11 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">home</span>
+                            Do you provide 24/7 residential locksmith services?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we are available around the clock to help with residential lockouts, lock repairs, and security upgrades.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Card 12 -->
+                <div class="faq-card visible-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300" data-category="general">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">question_answer</span>
+                            How do I schedule a service appointment?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>You can schedule a service by calling us directly, using our online booking form, or emailing us your request. We'll confirm a convenient time.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">attach_money</span>
+                            Do you provide upfront pricing?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we provide upfront pricing. No hidden fees or surprise charges.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 2 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="commercial">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">business</span>
+                            Can you handle commercial lockouts?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, our technicians are trained to handle commercial lockouts quickly and securely.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 3 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="emergency">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">alarm</span>
+                            Do you offer emergency lockout services?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Absolutely! We are available 24/7 for emergency lockout situations.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 4 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="auto">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">directions_car</span>
+                            Can you unlock cars?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we can safely unlock vehicles without causing any damage.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 5 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="general">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">support_agent</span>
+                            How can I contact customer support?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>You can contact us via phone, email, or our online contact form.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 6 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">home_repair_service</span>
+                            Can you replace damaged locks at home?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we can replace any damaged locks with high-quality new locks for your home.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 7 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="commercial">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">business</span>
+                            Do you offer office security consultations?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we provide on-site consultations to improve office security systems and procedures.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 8 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="emergency">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">warning</span>
+                            What if I am locked out at night?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>We provide 24/7 emergency services and can reach you anytime, even at night.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 9 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="residential">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">home</span>
+                            Can you install smart locks at home?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we can install a variety of smart locks to enhance your home security.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 10 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="commercial">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">corporate_fare</span>
+                            Do you provide commercial lock maintenance?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, we offer regular maintenance and inspection services for commercial locks and security systems.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 11 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="auto">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">directions_car_filled</span>
+                            Can you program car key fobs?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, our technicians can program and replace car key fobs for most vehicle models.</p>
+                    </div>
+                </div>
+
+                <!-- Hidden FAQ Card 12 -->
+                <div class="faq-card extra-card p-6 border-[3px] border-[#F58600] rounded-2xl bg-white shadow-xl hover:border-[#ea9e25] transition-all duration-300 hidden" data-category="general">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-[#221f1f] flex items-center gap-2">
+                            <span class="material-icons text-[#ea9e25] text-lg">help</span>
+                            Can I schedule a service appointment in advance?
+                        </h3>
+                        <button class="faq-btn bg-[#ea9e25] hover:bg-[#f58600] text-white w-10 h-10 rounded-full flex items-center justify-center transition-transform duration-300">
+                            <span class="material-icons text-xl">add</span>
+                        </button>
+                    </div>
+                    <div class="faq-answer mt-4 text-gray-600 max-h-0 overflow-hidden transition-all duration-500">
+                        <p>Yes, you can schedule service appointments in advance via our website or by calling us directly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show More / Show Less Button -->
+            <div class="mt-8 flex justify-center">
+                <button id="toggle-faqs" class="px-6 py-3 border-2 border-[#ea9e25] text-[#ea9e25] rounded-full text-base md:text-lg font-bold 
+                    hover:bg-[#ea9e25] hover:text-[#221f1f] transition-all duration-300 flex items-center justify-center gap-2">
+                    Show More <span class="material-icons">expand_more</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions Section -->
+    <section id="contact-cta" class="py-20 bg-[#e6e0d8]">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <!-- Header -->
+            <h2 class="text-4xl md:text-5xl font-extrabold text-[#221f1f] mb-6">
+               Still Have Questions?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                Our friendly customer service team is standing by to answer any questions you may have about our locksmith services. Don't hesitate to reach out!
+            </p>
+
+            <!-- Call & Book Service Buttons -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+                    <a href="tel:5512928090" class="px-6 py-3 bg-[#ea9e25] text-[#221f1f] font-bold rounded-full text-lg hover:bg-[#fca311] transition-colors duration-300 flex items-center gap-2">
+                        <span class="material-icons text-lg">call</span>
+                        Call (551) 292-8090
+                    </a>
+                    <a href="book-service.html" class="px-6 py-3 border-2 border-[#ea9e25] text-[#ea9e25] font-bold rounded-full text-lg hover:bg-[#ea9e25] hover:text-[#221f1f] transition-all duration-300 flex items-center gap-2">
+                        <span class="material-icons text-lg">schedule</span>
+                        Book Service
+                    </a>
+                </div>
+
+
+            <!-- Footer Info -->
+            <p class="text-gray-600 text-sm md:text-base">
+                Available 24/7 for emergency service • Licensed & Insured
+            </p>
+        </div>
+    </section>
 
     <!-- Enhanced Modern Footer -->
     <footer class="bg-[#1c1b1b] text-[#f8f9fa] pt-16 pb-8 border-t-4 border-[#F58600]">
@@ -378,6 +837,57 @@
     </a>
 
     <script src="mobile.js"></script>
+
+    <script>
+    const toggleFaqBtn = document.getElementById('toggle-faqs');
+    const extraFaqCards = document.querySelectorAll('#faq-grid .extra-card');
+
+    toggleFaqBtn.addEventListener('click', () => {
+        extraFaqCards.forEach(card => card.classList.toggle('hidden'));
+
+        const isHidden = extraFaqCards[0].classList.contains('hidden');
+        toggleFaqBtn.innerHTML = isHidden
+            ? `Show More <span class="material-icons">expand_more</span>`
+            : `Show Less <span class="material-icons">expand_less</span>`;
+    });
+
+    // FAQ card toggle answer when add button clicked
+    document.querySelectorAll('.faq-card').forEach(card => {
+        const btn = card.querySelector('.faq-btn');
+        const answer = card.querySelector('.faq-answer');
+
+        btn.addEventListener('click', () => {
+            answer.classList.toggle('max-h-0');
+            answer.classList.toggle('max-h-96');
+            btn.querySelector('span').classList.toggle('rotate-45'); // rotate add icon
+        });
+    });
+
+    // Search functionality
+    const searchInput = document.getElementById('faq-search');
+    searchInput.addEventListener('input', () => {
+        const term = searchInput.value.toLowerCase();
+        document.querySelectorAll('#faq-grid .faq-card').forEach(card => {
+            const question = card.querySelector('h3').innerText.toLowerCase();
+            card.style.display = question.includes(term) ? 'block' : 'none';
+        });
+    });
+
+    // Filter buttons functionality
+    document.querySelectorAll('.faq-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+            document.querySelectorAll('#faq-grid .faq-card').forEach(card => {
+                if(filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
 
 </body>
 </html>
